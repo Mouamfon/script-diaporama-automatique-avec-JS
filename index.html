@@ -1,0 +1,18 @@
+<! DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>TP 1 : Actions utilisateur et JS</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/tp1.css" />
+    </head>
+    <body onload="chienChat = setInterval('diaporama();', 2000);">
+        <h1>Actions utilisateur et JavaScript</h1>
+        <h2>Diaporama automatique</h2>
+        <div class="illustration">
+            <img id="diapo" src="image/chat.png" alt="un chat" height="200" />
+        </div>
+        <button onclick="clearInterval(chienChat);">stop !</button>
+        <button onclick="chienChat = setInterval('diaporama();', 2000);">Redémarrer !</button>
+        <script src="js/tp1.js"></script>
+    </body>
+</html>
